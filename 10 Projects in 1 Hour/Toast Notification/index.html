@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toast Notification</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div id="container"></div>
+    <button id="btn">
+        click me
+    </button>
+    <script>
+        const btn = document.querySelector('#btn');
+        const container = document.querySelector('#container');
+
+
+        btn.addEventListener('click', () => {
+            // const rndcolor = Math.floor(Math.random() * 255) + ',' + Math.floor(Math.random() * 255) + ',' +
+            //     Math.floor(Math.random() * 255);
+            createNotification();
+        });
+
+        function createNotification() {
+            const notif = document.createElement('div');
+            notif.classList.add('toast');
+           
+            notif.style.backgroundColor = 'rgb(' + Math.floor(Math.random() * 255) + ',' + Math.floor(Math.random() *
+                255) + ',' +
+                Math.floor(Math.random() * 255) + ')';
+
+            notif.innerHTML = 'This Is Toast Notification';
+
+            container.appendChild(notif);
+
+            setTimeout(() => {
+                notif.remove();
+            }, 3000);
+        }
+
+    </script>
+</body>
+
+</html>
