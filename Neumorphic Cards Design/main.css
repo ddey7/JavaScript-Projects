@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
+    background: rgb(39, 39, 39);
+}
+
+@media (max-width:1148px) {
+    .main {
+        height: auto;
+    }
+}
+
+.cardtotal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* height: 100px; */
+    margin: 40px 0;
+}
+
+.cardtotal .cardin {
+    color: aliceblue;
+    position: relative;
+    min-width: 320px;
+    height: 600px;
+    border-radius: 15px;
+    margin: 30px;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+        inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+        5px 5px 15px rgba(0, 0, 0, 0.3),
+        -5px -5px 15px rgba(255, 255, 255, 0.1);
+}
+
+.cardtotal .cardin .box {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background: rgb(51, 51, 51);
+    border-radius: 15px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    transition: .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.cardtotal .cardin .box:hover {
+    transform: translateY(-50px);
+    box-shadow: 0 40px 70px rgba(0, 0, 0, 0.5);
+}
+
+.cardtotal .cardin .box .content {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+.listgroupdetails{
+    
+}
+
+.priceheading {
+
+    position: absolute;
+    top: 20px;
+    color: rgba(255, 255, 255, 0.582);
+}
+
+.listgroupdetails {
+    list-style-type: none;
+}
+
+.buyprice {
+    display: block;
+    position: absolute;
+    bottom: 10px;
+}
+
+.list-group-item {
+    border: none !important
+}
+
+.second {
+    height: 100vh;
+    background: red;
+}
