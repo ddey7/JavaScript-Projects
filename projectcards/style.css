@@ -43,7 +43,7 @@
 .procon .procards .proimg {
     position: relative;
     top: -80px;
-    left: 5px;
+    left: 8px;
     z-index: 1;
 }
 
@@ -67,6 +67,6 @@
 .procon .procards:hover .prodet {
     visibility: visible;
     opacity: 1;
-    margin-top: 15px;
+    margin-top: -70px;
     transition-delay: 0.2s;
 }
