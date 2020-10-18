@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.promain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(21, 45, 65);
+    height: 100vh;
+}
+
+.procon {
+    position: relative;
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.procon .procards {
+    position: relative;
+    width: 300px;
+    height: 230px;
+    background: rgb(47, 69, 87);
+    margin: 30px 10px;
+    padding: 20px 10px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+}
+
+.procon .procards:hover {
+    height: 350px;
+}
+
+.procon .procards .proimg {
+    position: relative;
+    top: -80px;
+    left: 5px;
+    z-index: 1;
+}
+
+.procon .procards .proimg img {
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    width: 260px;
+    height: 260px;
+}
+
+.prodet {
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.procon .procards:hover .prodet {
+    visibility: visible;
+    opacity: 1;
+    margin-top: 15px;
+    transition-delay: 0.2s;
+}
