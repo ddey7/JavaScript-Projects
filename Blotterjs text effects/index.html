@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text-Effects</title>
+</head>
+
+<body>
+
+    <script src="/build/blotter.min.js"></script>
+    <!-- <script src="/build/materials/liquidDistortMaterial.js"></script> -->
+    <script src="/build/materials/channelSplitMaterial.js"></script>
+    <script>
+        var text = new Blotter.Text("Hello", {
+            family: "serif",
+            size: 120,
+            fill: "#171717"
+        });
+        //change the class name with materials 
+        var material = new Blotter.ChannelSplitMaterial();
+
+        var blotter = new Blotter(material, {
+            texts: text
+        });
+
+        var scope = blotter.forText(text);
+
+        scope.appendTo(document.body);
+
+    </script>
+</body>
+
+</html>
